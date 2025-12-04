@@ -58,3 +58,4 @@
     2. Testes mais robustos como de estresse de carga
     3. Sistemas de login
     4. Sistema de validação melhorada do XML
+5. Como estamos falando de dados fiscais, "atualizar" um documento geralmente significa corrigir uma inconsistência de processamento ou substituição do XML. Optei por receber um novo XML > reprocessar > Atualizar os metadados no banco.

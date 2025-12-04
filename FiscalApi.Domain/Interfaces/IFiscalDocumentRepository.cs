@@ -5,7 +5,16 @@ using System.Threading.Tasks;
 public interface IFiscalDocumentRepository
 {
     Task UpsertAsync(FiscalDocument document);
-    Task<FiscalDocument> GetByIdAsync(string id);
-    Task<IEnumerable<FiscalDocument>> GetAllAsync(int page, int pageSize, DateTime? dataInicio, string? emitenteDoc);
+    Task UpdateAsync(FiscalDocument document); // Para o PUT
+    Task<FiscalDocument?> GetByIdAsync(string id);
+        
+    // Listagem com filtros
+    Task<(IEnumerable<FiscalDocument> Data, long Total)> GetAllAsync(
+        int page, 
+        int pageSize, 
+        DateTime? dataInicio, 
+        DateTime? dataFim, 
+        string? emitenteDoc);
+            
     Task DeleteAsync(string id);
 }
