@@ -32,7 +32,7 @@
 2. Na raiz do projeto (onde tem um arquivo **.sln**) rode o comando ``dotnet run --project FiscalApi.Api``
 3. Acesse o Swagger: http://localhost:5166/swagger
 
-## Como testar os endpoints
+## Como testar alguns endpoints (Swagger já irá mostrá o que deve ser utilizado)
 - **POST** _/api/v1/documentos_
 - - Selecione um arquivo .xml via multipart/form-data.
 - - A API identificará automaticamente o tipo (NFe ou NFSe) e processará.
@@ -42,7 +42,7 @@
 
 ## Instruções para rodar os testes unitários
 1. Baixe o projeto (caso ainda não tenha obtido no tópico anterior)
-2. Na raiz do projeto executo (onde tem um arquivo .sln) rode o comando ``dotnet test``
+2. Na raiz do projeto (onde tem um arquivo .sln) rode o comando ``dotnet test``
 
 
 ## Explicação de tomadas de decisão
