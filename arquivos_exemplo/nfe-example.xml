@@ -1,0 +1,35 @@
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <NFe>
+    <infNFe Id="NFe35231212345678000195550010000001001000000000" versao="4.00">
+      <ide>
+        <cUF>35</cUF>
+        <natOp>Venda de Mercadoria</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>100</nNF>
+        <dhEmi>2023-12-05T14:30:00-03:00</dhEmi>
+        <tpNF>1</tpNF>
+      </ide>
+      <emit>
+        <CNPJ>12345678000195</CNPJ>
+        <xNome>EMPRESA EXEMPLO LTDA</xNome>
+        <xFant>LOJA DO DESENVOLVEDOR</xFant>
+      </emit>
+      <dest>
+        <CNPJ>98765432000100</CNPJ>
+        <xNome>CLIENTE COMPRADOR SA</xNome>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>001</cProd>
+          <xProd>Notebook Gamer</xProd>
+          <vProd>1500.50</vProd>
+        </prod>
+      </det>
+      <total>
+        <ICMSTot>
+          <vNF>1500.50</vNF> </ICMSTot>
+      </total>
+    </infNFe>
+  </NFe>
+</nfeProc>

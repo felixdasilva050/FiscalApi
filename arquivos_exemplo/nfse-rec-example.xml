@@ -1,0 +1,16 @@
+<Nfse xmlns="http://nfse.recife.pe.gov.br">
+    <IdentificacaoNfse>
+        <Numero>2023999</Numero>
+    </IdentificacaoNfse>
+    <DataEmissao>2023-12-01T09:00:00</DataEmissao>
+    <PrestadorServico>
+        <IdentificacaoPrestador>
+            <Cnpj>11222333000199</Cnpj>
+        </IdentificacaoPrestador>
+    </PrestadorServico>
+    <Servico>
+        <Valores>
+            <ValorServico>450.00</ValorServico>
+        </Valores>
+    </Servico>
+</Nfse>
