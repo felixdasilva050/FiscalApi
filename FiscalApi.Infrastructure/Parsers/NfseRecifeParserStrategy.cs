@@ -59,6 +59,7 @@ public class NfseRecifeParserStrategy : IDocumentParserStrategy
     {
         using var sha = SHA256.Create();
         var bytes = Encoding.UTF8.GetBytes(input);
-        return Convert.ToBase64String(sha.ComputeHash(bytes));
+        var hash = sha.ComputeHash(bytes);
+        return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
     }
 }
