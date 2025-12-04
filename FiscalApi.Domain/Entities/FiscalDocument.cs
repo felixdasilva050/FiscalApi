@@ -30,4 +30,13 @@ public class FiscalDocument
     }
 
     public void AtualizarXml(string novoXml) => XmlOriginal = novoXml;
+    
+    public void AtualizarDados(string novoXml, DateTime novaData, decimal novoValor, string novoEmitenteEnc, string novoDestinatarioEnc)
+    {
+        XmlOriginal = novoXml;
+        DataEmissao = novaData;
+        ValorTotal = novoValor;
+        EmitenteDocEncodado = novoEmitenteEnc;
+        DestinatarioDocEncodado = novoDestinatarioEnc;
+    }
 }
